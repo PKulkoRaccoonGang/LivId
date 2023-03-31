@@ -1,0 +1,93 @@
+@import 'fonts.scss';
+
+html {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 23px;
+  }
+
+  &__btn {
+    color: #FFF;
+    text-align: center;
+    min-width: 129px;
+    padding: 10px 0;
+  }
+
+  &__login {
+    background: linear-gradient(135.53deg, #917AFD 2.61%, #6246EA 96.58%);
+    box-shadow: 4px 14px 34px rgba(139, 116, 251, 0.4);
+    border-radius: 100px;
+  }
+
+  &__register {
+    background: linear-gradient(299.27deg, #FF9C29 24.69%, #FFB258 81.84%);
+    box-shadow: 4px 14px 19px rgba(255, 156, 41, 0.33);
+    border-radius: 100px;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  &__link {
+    position: relative;
+    color: #684DEC;
+    padding-bottom: 4px;  
+
+    &-active {
+      
+      &::before {
+        content:"";
+        position: absolute;
+        border-radius: 2px;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background: #684DEC;
+      }
+    }
+  }
+}
+
