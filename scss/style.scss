@@ -50,15 +50,40 @@ a {
     column-gap: 23px;
   }
 
+  &__login {
+
+    &:hover {
+      box-shadow: 0 5px 0 #917AFD;
+      transform: translateY(-5px);
+    }
+  }
+
+  &__register {
+
+    &:hover {
+      box-shadow: 0 5px 0 #FFB258;
+      transform: translateY(-5px);
+    }
+  }
+
   &__btn {
-    color: #FFF;
     text-align: center;
     min-width: 129px;
     padding: 10px 0;
     transition: all .3s;
+    border: none;
 
-    &:hover {
-      box-shadow: none;
+    &:active {
+      box-shadow: 0 0px 0 transparent;
+      transform: translateY(-2px);
+    }
+
+
+    &-link {
+      color: #FFF;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -96,17 +121,14 @@ a {
 
   .header {
     padding: 0;
-  }
-}
-
-@media (max-width: 320px){
-
-  .header {
     &__buttons {
       display: none;
     }
   }
 }
+
+// @media (max-width: 320px){
+// }
 
 .menu {
 
@@ -160,6 +182,10 @@ a {
 @media (max-width: 768px){
 
   .menu {
+
+    &__burger {
+      display: block;
+    }
 
     &__list {
       display: none;
