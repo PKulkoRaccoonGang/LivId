@@ -113,6 +113,7 @@ a {
   align-items: center;
 }
 .menu__burger {
+  display: none;
   text-align: center;
 }
 .menu__list {
