@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "NunitoSans";
+  font-family: "NunitoSans-Bold";
   font-weight: 700;
   src: url("../fonts/NunitoSans-Bold.woff2") format("woff2"), url("../fonts/NunitoSans-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "NunitoSans";
+  font-family: "NunitoSans-Regular";
   font-weight: 400;
   src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"), url("../fonts/NunitoSans-Regular.woff") format("woff");
 }
@@ -36,6 +36,7 @@ li {
 body {
   margin: 0;
   overflow: hidden;
+  font-size: 16px;
 }
 
 a {
@@ -56,7 +57,6 @@ a {
 .header {
   font-family: "Quicksand";
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
   padding: 20px 0;
   background: linear-gradient(107.76deg, #EBF6FF 6.69%, #ECECFE 52.99%, #FEEFF3 98.71%);
@@ -93,7 +93,6 @@ a {
 .header__btn-link {
   color: #FFF;
   font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
 }
 .header__login {
@@ -121,9 +120,6 @@ a {
   }
 }
 @media (max-width: 768px) {
-  .header {
-    padding: 0;
-  }
   .header__buttons {
     display: none;
   }
@@ -182,7 +178,7 @@ a {
   padding-bottom: 4px;
 }
 .menu__link:hover {
-  color: rgba(103, 77, 236, 0.6980392157);
+  color: #8f7bf1;
 }
 .menu__link-active::before {
   content: "";
@@ -210,12 +206,15 @@ a {
     align-items: start;
     row-gap: 10px;
     position: absolute;
-    top: -7px;
-    right: 55px;
-    transform: translateY(-110%);
+    top: 50px;
+    left: 0px;
+    transform: translateX(-270%);
     transition: transform 0.6s;
   }
   .menu__list-visible {
+    height: 100vh;
+    width: 100vw;
     transform: none;
+    background: linear-gradient(107.76deg, #EBF6FF 6.69%, #ECECFE 52.99%, #FEEFF3 98.71%);
   }
 }/*# sourceMappingURL=style.css.map */
