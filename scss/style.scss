@@ -1,7 +1,5 @@
 @import 'fonts.scss';
 @import 'variables.scss';
-
-
 html {
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
@@ -22,7 +20,6 @@ body {
   margin: 0;
   overflow: auto;
   font-size: 16px;
-
   &.active {
     overflow: hidden;
   }
@@ -47,7 +44,6 @@ a {
 .header {
   position: fixed;
   width: 100%;
-  font-family: 'Quicksand';
   font-weight: 700;
   line-height: 20px;
   padding: 20px 0;
@@ -92,12 +88,12 @@ a {
     cursor: pointer;
 
     &:active {
-      box-shadow: 0 0px 0 transparent;
+      box-shadow: 0 0 0 transparent;
       transform: translateY(-2px);
     }
 
     &-link {
-      color: #FFF;
+      color: $white;
       font-weight: 700;
       line-height: 20px;
     }
@@ -105,7 +101,7 @@ a {
     &-login {
       background: linear-gradient(135.53deg, #917AFD 2.61%, #6246EA 96.58%);
       border-radius: 100px;
-      box-shadow: 4px 14px 34px rgba(139, 116, 251, 0.4);
+      box-shadow: 4px 14px 34px rgba(139, 116, 251, .4);
 
       &:hover {
         box-shadow: 0 5px 0 #917AFD;
@@ -113,7 +109,7 @@ a {
       }
 
       &:active {
-        box-shadow: 0 0px 0 transparent;
+        box-shadow: 0 0 0 transparent;
         transform: translateY(-2px);
       }
     }
@@ -121,7 +117,7 @@ a {
     &-register {
       background: linear-gradient(299.27deg, #FF9C29 24.69%, #FFB258 81.84%);
       border-radius: 100px;
-      box-shadow: 4px 14px 19px rgba(255, 156, 41, 0.33);
+      box-shadow: 4px 14px 19px rgba(255, 156, 41, .33);
 
       &:hover {
         box-shadow: 0 5px 0 #FFB258;
@@ -129,14 +125,14 @@ a {
       }
 
       &:active {
-        box-shadow: 0 0px 0 transparent;
+        box-shadow: 0 0 0 transparent;
         transform: translateY(-2px);
       }
     }
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .header {
     padding: 10px 0;
     font-size: 14px;
@@ -152,7 +148,7 @@ a {
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .header {
     position: fixed;
     width: 100%;
@@ -163,23 +159,6 @@ a {
     &__buttons {
       display: none;
     }
-  
-    // &__buttons {
-    //   position: absolute;
-    //   right: 0;
-    //   top: 150px;
-    // }
-
-    // &__btn {
-    //   padding: 0;
-    //   background: transparent;
-    //   box-shadow: none;
-      
-      
-    //   &-link {
-    //     color:#6246EA;
-    //   }
-    // }
   }
 
   .main {
@@ -266,7 +245,6 @@ a {
     }
 
     &-active {
-
       &::before {
         content:"";
         position: absolute;
@@ -280,7 +258,7 @@ a {
   }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
   .menu {
 
     &__list {
@@ -289,7 +267,7 @@ a {
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
   .menu {
     z-index: auto;
@@ -298,6 +276,7 @@ a {
       display: block;
       position: relative;
       z-index: 2;
+      cursor: pointer;
     }
 
     &__list {
@@ -327,7 +306,7 @@ a {
             left: 40%;
           }
         }
-    }
+      }
 
     &__item {
       display: block;
@@ -339,7 +318,6 @@ a {
         display: flex;
         justify-content: space-between;
         min-width: 200px;
-
         span {
           position: absolute;
           right: 50%;

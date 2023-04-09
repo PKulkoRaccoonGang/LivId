@@ -61,7 +61,6 @@ a {
 .header {
   position: fixed;
   width: 100%;
-  font-family: "Quicksand";
   font-weight: 700;
   line-height: 20px;
   padding: 20px 0;
@@ -102,7 +101,7 @@ a {
   cursor: pointer;
 }
 .header__button:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 .header__button-link {
@@ -120,7 +119,7 @@ a {
   transform: translateY(-5px);
 }
 .header__button-login:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 .header__button-register {
@@ -133,7 +132,7 @@ a {
   transform: translateY(-5px);
 }
 .header__button-register:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 
@@ -248,6 +247,7 @@ a {
     display: block;
     position: relative;
     z-index: 2;
+    cursor: pointer;
   }
   .menu__list {
     overflow: auto;
