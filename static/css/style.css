@@ -264,8 +264,19 @@ a {
   .menu__list-visible {
     top: 0;
   }
+  .menu__link {
+    display: block;
+    width: 100%;
+  }
+  .menu__link-active::before {
+    width: 20%;
+    left: 40%;
+  }
   .menu__item {
+    display: block;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
   }
   .menu__item-login {
     display: flex;

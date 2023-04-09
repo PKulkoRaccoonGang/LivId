@@ -317,8 +317,23 @@ a {
       }
     }
 
+    &__link {
+      display: block;
+      width: 100%;
+
+        &-active {
+          &::before {
+            width: 20%;
+            left: 40%;
+          }
+        }
+    }
+
     &__item {
+      display: block;
       margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
 
       &-login {
         display: flex;
