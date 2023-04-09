@@ -1,10 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Livid</title> 
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__wrapper">
+                <a class="header__logo" href="/"><img class="header__logo-img" src="/static/img/logo.svg" alt="header_logo"></a>
+                <nav class="menu header__menu">
+                    <div class="menu__burger"><span class="menu__burger-span"></span></div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link menu__link-active" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                        <li class="menu__item menu__item-login">
+                            <a class="menu__link" href="#">Register</a>
+                            <span></span>
+                            <a class="menu__link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="header__button header__button-login"><a class="header__button-link" href="#">Login</a></button>
+                    <button class="header__button header__button-register"><a class="header__button-link" href="#">Register</a></button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+        </main>
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__main">
+                    <div class="footer__logo">
+                        <a class="footer__logo-link" href="/"><img class="footer__logo-img" src="/static/img/footer/logo_footer.svg" alt="logo footer"></a>
+                        <h4 class="footer__logo-subtitle">Helping you find the ideal place to live!</h4>
+                    </div>
+                    <div class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Home</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Features</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">About Us</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Help</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Download on:</h4>
+                        <div class="footer__links-items">
+                            <a class="footer__link-item" href=""><img class="footer__link-img" src="/static/img/footer/google_play.svg" alt="google_play"></a>
+                            <a class="footer__link-item" href=""><img class="footer__link-img" src="/static/img/footer/app_store.svg" alt="app_store"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer__media">
+                    <div class="footer__media-items">
+                        <a class="footer__media-link" href="#"><img class="footer__media-img" src="/static/img/footer/facebook.svg" alt="facebook"></a>
+                        <a class="footer__media-link" href="#"><img class="footer__media-img" src="/static/img/footer/twitter.svg" alt="twitter"></a>
+                        <a class="footer__media-link" href="#"><img class="footer__media-img" src="/static/img/footer/instagram.svg" alt="nstagram"></a>
+                    </div>
+                    <h4 class="footer__media-subtitle">(C) 2022 LivID</h4>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
