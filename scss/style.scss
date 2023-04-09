@@ -156,8 +156,23 @@ a {
     top: 0;
     z-index: 50;
 
+    &__wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &-active {
+        min-height: 100vh;
+      }
+    }
+
     &__buttons {
       display: none;
+      flex-direction: column;
+      row-gap: 10px;
+
+      &-active {
+        display: flex;
+      }
     }
   }
 
@@ -228,13 +243,6 @@ a {
     column-gap: 60px;
   }
 
-  &__item {
-
-    &-login {
-      display: none;
-    }
-  }
-
   &__link {
     position: relative;
     color: $accent-color;
@@ -269,8 +277,15 @@ a {
 
 @media (max-width: 768px) {
 
+  .logo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
   .menu {
-    z-index: auto;
+    z-index: 10;
 
     &__burger {
       display: block;
@@ -280,22 +295,18 @@ a {
     }
 
     &__list {
-      overflow: auto;
-      position: absolute;
-      padding: 60px;
+      display: none;
       flex-direction: column;
-      transition: all .6s;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(107.76deg, #EBF6FF 6.69%, #ECECFE 52.99%, #FEEFF3 98.71%);
-      top: -100vh;
-      left: 0;
-
-      &-visible {
-        top: 0;
-      }
+      padding: 0;
     }
 
+    &__list {
+
+      &-visible {
+        display: block;
+      }
+    }
+    
     &__link {
       display: block;
       width: 100%;
