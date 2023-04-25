@@ -42,9 +42,6 @@ a {
 }
 
 .header {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
   font-family: "Quicksand";
   font-weight: 700;
   line-height: 20px;
@@ -84,7 +81,7 @@ a {
     }
 
     &-link {
-      color: #fff;
+      color: $white;
       font-weight: 700;
       line-height: 20px;
     }
@@ -166,14 +163,14 @@ a {
     &-active {
       span {
         background: transparent;
-      }
 
-      span::after {
-        transform: rotate(-45deg);
-      }
+        &::after {
+          transform: rotate(-45deg);
+        }
 
-      span::before {
-        transform: rotate(45deg);
+        &::before {
+          transform: rotate(45deg);
+        }
       }
     }
   }
@@ -184,12 +181,9 @@ a {
     column-gap: 60px;
   }
 
-  &__item {
-    &-login {
-      display: none;
-    }
+  &__item-login {
+    display: none;
   }
-
   &__link {
     position: relative;
     color: $accent-color;

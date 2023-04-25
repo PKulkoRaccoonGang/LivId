@@ -17,13 +17,12 @@
     }
   }
 
-  .menu {
-    &__list {
+  .menu__list {
       column-gap: 30px;
     }
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .header {
       position: fixed;
       width: 100%;
@@ -65,8 +64,7 @@
         display: block;
         width: 100%;
 
-        &-active {
-          &::before {
+        &-active::before {
             display: none;
           }
         }
@@ -93,11 +91,9 @@
           }
         }
       }
-    }
-
-    .menu__list-visible,
-    .header__buttons-visible {
-      display: flex;
-    }
   }
+
+.menu__list-visible,
+.header__buttons-visible {
+  display: flex;
 }

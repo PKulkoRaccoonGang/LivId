@@ -59,9 +59,6 @@ a {
 }
 
 .header {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
   font-family: "Quicksand";
   font-weight: 700;
   line-height: 20px;
@@ -94,7 +91,7 @@ a {
   transform: translateY(-2px);
 }
 .header__button-link {
-  color: #fff;
+  color: #FFF;
   font-weight: 700;
   line-height: 20px;
 }
@@ -217,7 +214,7 @@ a {
          column-gap: 30px;
   }
 }
-@media (max-width: 1024px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .header {
     position: fixed;
     width: 100%;
@@ -275,8 +272,8 @@ a {
     background: #684DEC;
     border-radius: 2px;
   }
-  .menu__list-visible,
-  .header__buttons-visible {
-    display: flex;
-  }
+}
+.menu__list-visible,
+.header__buttons-visible {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
