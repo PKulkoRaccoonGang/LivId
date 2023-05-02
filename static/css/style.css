@@ -87,7 +87,7 @@ a {
   cursor: pointer;
 }
 .header__button:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 .header__button-link {
@@ -105,7 +105,7 @@ a {
   transform: translateY(-5px);
 }
 .header__button-login:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 .header__button-register {
@@ -118,7 +118,7 @@ a {
   transform: translateY(-5px);
 }
 .header__button-register:active {
-  box-shadow: 0 0px 0 transparent;
+  box-shadow: 0 0 0 transparent;
   transform: translateY(-2px);
 }
 
@@ -193,6 +193,11 @@ a {
   background: #684DEC;
 }
 
+.menu__list-visible,
+.header__buttons-visible {
+  display: flex;
+}
+
 @media (max-width: 1024px) {
   .container {
     padding: 0 10px;
@@ -236,6 +241,7 @@ a {
     width: 100%;
   }
   .menu__burger {
+    cursor: pointer;
     top: 15px;
     right: 20px;
     display: block;
@@ -272,8 +278,4 @@ a {
     background: #684DEC;
     border-radius: 2px;
   }
-}
-.menu__list-visible,
-.header__buttons-visible {
-  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@
       width: 100%;
 
       &__burger {
+        cursor: pointer;
         top: 15px;
         right: 20px;
         display: block;
@@ -68,9 +69,8 @@
             display: none;
           }
         }
-      }
 
-      &__item {
+        &__item {
         display: block;
         margin-bottom: 20px;
         text-align: center;
@@ -91,9 +91,7 @@
           }
         }
       }
+    }
   }
+  
 
-.menu__list-visible,
-.header__buttons-visible {
-  display: flex;
-}
