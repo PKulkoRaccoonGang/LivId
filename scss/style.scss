@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 
+
 html {
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
@@ -191,7 +192,7 @@ a {
       color: lighten($accent-color, 10%);
     }
 
-    &-active::before {
+    &-active:before {
         content: "";
         position: absolute;
         border-radius: 2px;
@@ -203,9 +204,9 @@ a {
   }
 }
 
+@import "media.scss";
+
 .menu__list-visible,
 .header__buttons-visible {
   display: flex;
 }
-
-@import "media.scss";
