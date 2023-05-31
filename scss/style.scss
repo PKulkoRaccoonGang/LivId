@@ -205,7 +205,7 @@ a {
 }
 
 .footer {
-  background-color: #5740C5;
+  background-color: $accent-color;
   color: #FFF;
   padding: 67px 0;
 
@@ -223,10 +223,15 @@ a {
     }
 
     &-link {
+      transition: all .3s;
       color: #FFF;
       font-weight: 700;
       font-size: 16px;
       line-height: 20px;
+
+      &:hover {
+        color: darken($white, 30%);
+      }
     }
   }
 
@@ -246,7 +251,6 @@ a {
   }
 
   &__links {
-
     &-title {
       font-weight: 700;
       font-size: 20px;
@@ -260,6 +264,18 @@ a {
     }
   }
 
+  &__link-img {
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0px 22px 20px rgb(255 255 255 / 33%);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
   &__media {
 
     &-items {
@@ -267,71 +283,16 @@ a {
       column-gap: 22px;
       margin-bottom: 12px;
     }
-  }
-}
 
-@media (max-width: 1024px) {
-  .footer {
+    &-link {
+      border-radius: 50px;
+      transition: all .3s;
 
-    &__logo {
-
-      &-subtitle {
-        font-size: 18px;
-        line-height: 25px;
-      }
-    }
-
-    &__main {
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    &__menu {
-
-      &-list {
-        column-gap: 30px;
-      }
-
-      &-link {
-        font-size: 14px;
-      }
-    }
-
-    &__links {
-      margin-bottom: 20px;
-
-      &-title {
-        font-size: 16px;
-      }
-    }
-
-    &__media {
-      text-align: center;
-
-      &-items {
-        justify-content: center;
-      }
-    }
-  }  
-}
-
-@media (max-width: 768px){
-  .footer {
-
-    padding: 37px 0px;
-
-    &__menu {
-
-      &-list {
-        padding: 0;
-      }
-    }
-
-    &__logo {
-
-      &-subtitle {
-        font-size: 14px;
-        line-height: 20px;
+      &:hover {
+        path {
+          transition: all .3s;
+          fill: darken($white, 30%);
+        }
       }
     }
   }
