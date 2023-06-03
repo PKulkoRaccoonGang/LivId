@@ -206,7 +206,7 @@ a {
 
 .footer {
   background-color: $accent-color;
-  color: #FFF;
+  color: $white;
   padding: 67px 0;
 
   &__main {
@@ -216,7 +216,6 @@ a {
   }
 
   &__menu {
-
     &-list {
       display: flex;
       column-gap: 60px;
@@ -224,7 +223,7 @@ a {
 
     &-link {
       transition: all .3s;
-      color: #FFF;
+      color: $white;
       font-weight: 700;
       font-size: 16px;
       line-height: 20px;
@@ -268,7 +267,7 @@ a {
     transition: all .3s;
 
     &:hover {
-      box-shadow: 0px 22px 20px rgb(255 255 255 / 33%);
+      box-shadow: 0 22px 20px rgb(255 255 255 / 33%);
     }
 
     &:active {
@@ -277,7 +276,6 @@ a {
   }
 
   &__media {
-
     &-items {
       display: flex;
       column-gap: 22px;
@@ -288,9 +286,13 @@ a {
       border-radius: 50px;
       transition: all .3s;
 
-      &:hover {
-        path {
-          transition: all .3s;
+      &--icon {
+        width: 37px;
+        height: 37px;
+        fill: $white;
+        transition: all .3s;
+
+        &:hover {
           fill: darken($white, 30%);
         }
       }

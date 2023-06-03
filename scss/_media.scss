@@ -97,12 +97,9 @@
   @media (max-width: 1024px) {
     .footer {
   
-      &__logo {
-  
-        &-subtitle {
-          font-size: 18px;
-          line-height: 25px;
-        }
+      &__logo-subtitle {
+        font-size: 18px;
+        line-height: 25px;
       }
   
       &__main {
@@ -141,22 +138,15 @@
   
   @media (max-width: 768px){
     .footer {
-  
       padding: 37px 0px;
   
-      &__menu {
-  
-        &-list {
-          padding: 0;
-        }
+      &__menu-list {
+        padding: 0;
       }
   
-      &__logo {
-  
-        &-subtitle {
-          font-size: 14px;
-          line-height: 20px;
-        }
+      &__logo-subtitle {
+        font-size: 14px;
+        line-height: 20px;
       }
     }
   }

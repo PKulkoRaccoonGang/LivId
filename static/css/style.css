@@ -240,7 +240,7 @@ a {
   transition: all 0.3s;
 }
 .footer__link-img:hover {
-  box-shadow: 0px 22px 20px rgba(255, 255, 255, 0.33);
+  box-shadow: 0 22px 20px rgba(255, 255, 255, 0.33);
 }
 .footer__link-img:active {
   box-shadow: none;
@@ -254,8 +254,13 @@ a {
   border-radius: 50px;
   transition: all 0.3s;
 }
-.footer__media-link:hover path {
+.footer__media-link--icon {
+  width: 37px;
+  height: 37px;
+  fill: #FFF;
   transition: all 0.3s;
+}
+.footer__media-link--icon:hover {
   fill: #b3b3b3;
 }
 
