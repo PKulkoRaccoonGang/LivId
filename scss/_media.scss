@@ -94,4 +94,60 @@
     }
   }
   
+  @media (max-width: 1024px) {
+    .footer {
+  
+      &__logo-subtitle {
+        font-size: 18px;
+        line-height: 25px;
+      }
+  
+      &__main {
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+  
+      &__menu {
+  
+        &-list {
+          column-gap: 30px;
+        }
+  
+        &-link {
+          font-size: 14px;
+        }
+      }
+  
+      &__links {
+        margin-bottom: 20px;
+  
+        &-title {
+          font-size: 16px;
+        }
+      }
+  
+      &__media {
+        text-align: center;
+  
+        &-items {
+          justify-content: center;
+        }
+      }
+    }  
+  }
+  
+  @media (max-width: 768px){
+    .footer {
+      padding: 37px 0px;
+  
+      &__menu-list {
+        padding: 0;
+      }
+  
+      &__logo-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
 
